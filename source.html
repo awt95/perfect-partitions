@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #60a0b0; font-style: italic">&lt;!-- Created by Alex Turner, 2015 --&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;html&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;head&gt;</span>
+  <span style="color: #60a0b0; font-style: italic">&lt;!-- Google Fonts --&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;link</span> <span style="color: #4070a0">href=&#39;http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&#39;</span> <span style="color: #4070a0">rel=&#39;stylesheet&#39;</span> <span style="color: #4070a0">type=&#39;text/css&#39;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+  <span style="color: #60a0b0; font-style: italic">&lt;!-- CSS Stylesheet --&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;link</span> <span style="color: #4070a0">rel=&quot;stylesheet&quot;</span> <span style="color: #4070a0">type=&quot;text/css&quot;</span> <span style="color: #4070a0">href=&quot;http://aturner.co/project/pp/pp-style.css&quot;</span><span style="color: #062873; font-weight: bold">/&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;title&gt;</span>perfectly sized partitions<span style="color: #062873; font-weight: bold">&lt;/title&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;/head&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;center&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;container&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;h1&gt;</span>Perfect Partitions<span style="color: #062873; font-weight: bold">&lt;/h1&gt;&lt;br&gt;</span>
+        A dead simple calculator to get perfectly round sizes for your partitions<span style="color: #062873; font-weight: bold">&lt;br&gt;&lt;br&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;form</span> <span style="color: #4070a0">method=&quot;POST&quot;</span> <span style="color: #4070a0">action=&quot;&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;table</span> <span style="color: #4070a0">class=&quot;nostyle&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;tr&gt;</span>
+              <span style="color: #062873; font-weight: bold">&lt;td&gt;</span>
+                <span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">type=&quot;text&quot;</span> <span style="color: #4070a0">placeholder=&quot;Desired size&quot;</span> <span style="color: #4070a0">name=&quot;desiredsize&quot;</span> <span style="color: #4070a0">class=&quot;desiredsize&quot;</span><span style="color: #062873; font-weight: bold">/&gt;</span>
+                <span style="color: #062873; font-weight: bold">&lt;select</span> <span style="color: #4070a0">name=&quot;unit&quot;</span> <span style="color: #4070a0">class=&quot;selectunit&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+                  <span style="color: #062873; font-weight: bold">&lt;option&gt;</span>MB<span style="color: #062873; font-weight: bold">&lt;/option&gt;</span>
+                  <span style="color: #062873; font-weight: bold">&lt;option</span> <span style="color: #4070a0">selected=&quot;selected&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>GB<span style="color: #062873; font-weight: bold">&lt;/option&gt;</span>
+                  <span style="color: #062873; font-weight: bold">&lt;option&gt;</span>TB<span style="color: #062873; font-weight: bold">&lt;/option&gt;</span>
+                <span style="color: #062873; font-weight: bold">&lt;/select&gt;</span>
+              <span style="color: #062873; font-weight: bold">&lt;/td&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;tr&gt;</span>
+              <span style="color: #062873; font-weight: bold">&lt;td&gt;&lt;center&gt;&lt;input</span> <span style="color: #4070a0">type=&quot;submit&quot;</span> <span style="color: #4070a0">value=&quot;Get Size&quot;</span> <span style="color: #4070a0">name=&quot;getsize&quot;</span><span style="color: #062873; font-weight: bold">/&gt;&lt;/center&gt;&lt;/td&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;/tr&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;/table&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/form&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;output&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+      <span style="color: #007020">&lt;?php</span>
+        <span style="color: #60a0b0; font-style: italic">// Check if form has been submitted</span>
+        <span style="color: #007020; font-weight: bold">if</span> (<span style="color: #007020">isset</span>(<span style="color: #bb60d5">$_POST</span>[<span style="color: #4070a0">&quot;getsize&quot;</span>])) {
+          <span style="color: #60a0b0; font-style: italic">// Calls function using size and unit as specified by user</span>
+          <span style="color: #60a0b0; font-style: italic">// echos result</span>
+          <span style="color: #007020; font-weight: bold">echo</span> <span style="color: #4070a0">&quot;&lt;p&gt;&quot;</span> <span style="color: #666666">.</span> getPerfectSize(<span style="color: #bb60d5">$_POST</span>[<span style="color: #4070a0">&quot;desiredsize&quot;</span>], <span style="color: #bb60d5">$_POST</span>[<span style="color: #4070a0">&quot;unit&quot;</span>]) <span style="color: #666666">.</span><span style="color: #4070a0">&quot;&lt;/p&gt;&quot;</span>;
+        }
+        <span style="color: #60a0b0; font-style: italic">// Function to output perfect size for a partition</span>
+        <span style="color: #60a0b0; font-style: italic">// given a target size and unit</span>
+        <span style="color: #60a0b0; font-style: italic">// or outputs an error message</span>
+        <span style="color: #007020; font-weight: bold">function</span> <span style="color: #06287e">getPerfectSize</span>(<span style="color: #bb60d5">$targetsize</span>, <span style="color: #bb60d5">$unit</span>) {
+          <span style="color: #007020; font-weight: bold">try</span> {
+            <span style="color: #60a0b0; font-style: italic">// Checks if numeric</span>
+            <span style="color: #007020; font-weight: bold">if</span> (<span style="color: #666666">!</span><span style="color: #007020">is_numeric</span>(<span style="color: #bb60d5">$targetsize</span>)) {
+              <span style="color: #007020; font-weight: bold">throw</span> <span style="color: #007020; font-weight: bold">new</span> Exception(<span style="color: #4070a0">&quot;Size given is not numeric&quot;</span>);
+            } <span style="color: #60a0b0; font-style: italic">// if</span>
+            <span style="color: #60a0b0; font-style: italic">// Checks that it is not empty</span>
+            <span style="color: #007020; font-weight: bold">if</span> (<span style="color: #bb60d5">$targetsize</span> <span style="color: #666666">&lt;</span> <span style="color: #40a070">1</span>) {
+              <span style="color: #007020; font-weight: bold">throw</span> <span style="color: #007020; font-weight: bold">new</span> Exception(<span style="color: #4070a0">&quot;Size given is not valid&quot;</span>);
+            } <span style="color: #60a0b0; font-style: italic">// if</span>
+            <span style="color: #60a0b0; font-style: italic">// Calculate MiB size (Mebibyte)</span>
+            <span style="color: #007020; font-weight: bold">switch</span>(<span style="color: #bb60d5">$unit</span>) {
+              <span style="color: #007020; font-weight: bold">case</span> <span style="color: #4070a0">&quot;TB&quot;</span><span style="color: #666666">:</span>  <span style="color: #bb60d5">$result</span> <span style="color: #666666">=</span> <span style="color: #bb60d5">$targetsize</span> <span style="color: #666666">*</span> <span style="color: #40a070">1048576</span>; <span style="color: #007020; font-weight: bold">break</span>;
+              <span style="color: #007020; font-weight: bold">case</span> <span style="color: #4070a0">&quot;GB&quot;</span><span style="color: #666666">:</span>  <span style="color: #bb60d5">$result</span> <span style="color: #666666">=</span> <span style="color: #bb60d5">$targetsize</span> <span style="color: #666666">*</span> <span style="color: #40a070">1024</span>;    <span style="color: #007020; font-weight: bold">break</span>;
+              <span style="color: #60a0b0; font-style: italic">// Default is case for MB</span>
+              <span style="color: #60a0b0; font-style: italic">// Rounds up to nearest integer using ceil()</span>
+              <span style="color: #007020; font-weight: bold">default</span><span style="color: #666666">:</span>    <span style="color: #bb60d5">$result</span> <span style="color: #666666">=</span> <span style="color: #007020">ceil</span>(<span style="color: #bb60d5">$targetsize</span> <span style="color: #666666">*</span> <span style="color: #40a070">1.024</span>);   <span style="color: #007020; font-weight: bold">break</span>;
+            } <span style="color: #60a0b0; font-style: italic">// switch</span>
+            <span style="color: #60a0b0; font-style: italic">// Now compensate for overhead (simply add 1)</span>
+            <span style="color: #bb60d5">$result</span><span style="color: #666666">++</span>;
+            <span style="color: #bb60d5">$iserror</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">false</span>;
+          } <span style="color: #60a0b0; font-style: italic">//try</span>
+          <span style="color: #007020; font-weight: bold">catch</span> (Exception <span style="color: #bb60d5">$e</span>){
+            <span style="color: #60a0b0; font-style: italic">// Catches any exceptions</span>
+            <span style="color: #bb60d5">$iserror</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">true</span>;
+            <span style="color: #bb60d5">$result</span> <span style="color: #666666">=</span> <span style="color: #bb60d5">$e</span><span style="color: #666666">-&gt;</span><span style="color: #4070a0">getMessage</span>();
+          } <span style="color: #60a0b0; font-style: italic">// catch</span>
+          <span style="color: #60a0b0; font-style: italic">// Print result in a formatted style</span>
+          <span style="color: #007020; font-weight: bold">if</span> (<span style="color: #bb60d5">$iserror</span>) {
+            <span style="color: #007020; font-weight: bold">echo</span> <span style="color: #4070a0">&quot;&lt;br&gt;Error: </span><span style="color: #70a0d0; font-style: italic">$result</span><span style="color: #4070a0">&quot;</span>;
+          } <span style="color: #007020; font-weight: bold">else</span> {
+            <span style="color: #007020; font-weight: bold">echo</span> <span style="color: #4070a0">&quot;&lt;br&gt;Partition size required is &lt;b&gt;</span><span style="color: #70a0d0; font-style: italic">$result</span><span style="color: #4070a0"> MB&lt;/b&gt;&lt;br&gt;&quot;</span>;
+            <span style="color: #007020; font-weight: bold">echo</span> <span style="color: #4070a0">&quot;Enter this value into your disk management software so that your partition appears as exactly &lt;b&gt;</span><span style="color: #70a0d0; font-style: italic">$targetsize</span><span style="color: #4070a0"> </span><span style="color: #70a0d0; font-style: italic">$unit</span><span style="color: #4070a0">&lt;/b&gt;&quot;</span>;
+          } <span style="color: #60a0b0; font-style: italic">// else</span>
+        } <span style="color: #60a0b0; font-style: italic">// function getPerfectSize</span>
+      <span style="color: #007020">?&gt;</span> 
+      <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;/center&gt;</span>
+    <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;footer&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;a</span> <span style="color: #4070a0">href=&quot;http://aturner.co/project/pp/about&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>about<span style="color: #062873; font-weight: bold">&lt;/a&gt;</span> | created by <span style="color: #062873; font-weight: bold">&lt;a</span> <span style="color: #4070a0">href=&quot;http://aturner.co/&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>Alex Turner<span style="color: #062873; font-weight: bold">&lt;/a&gt;</span>, 2015<span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #062873; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #062873; font-weight: bold">&lt;/html&gt;</span>
+</pre></td></tr></table></div>
+
+</body>
+</html>

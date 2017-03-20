@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>about</title>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="pp-style.css"/>
+</head>
+<body>
+<div style="margin-left:20px; margin-top:20px">
+  This is stupidly simple but rather useful (for me, anyway)<br>
+  Source code can be found <b><a href="http://aturner.co/project/pp/source">here</a></b><br>
+  Here is the pseudo code for the calculator:
+  <ul>
+    <li>
+      Convert target size into mebibytes (MiB)
+      <ul>
+        <li>For TB: result = target size * 1024 * 1024</li>
+        <li>For GB: result = target size * 1024</li>
+        <li>For MB: result = target size * 1.024, round up to nearest integer</li>
+      </ul>
+    </li>
+    <li>
+    Add one MiB to compensate for additional overhead<br>
+    <i>n.b. Actual overhead size is apparently 8 sectors (4KB) for NTFS volumes,<br>
+    but accounting for this is arbitrary, especially since Disk Management uses MB</i>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
